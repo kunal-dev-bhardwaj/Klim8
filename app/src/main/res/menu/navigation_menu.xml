@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/menu_foot"
+        android:icon="@drawable/menu_ic_foot"
+        android:title="Carbon Footprint" />
+
+    <item
+        android:id="@+id/menu_card"
+        android:icon="@drawable/menu_ic_card"
+        android:title="Scorecard" />
+
+    <item
+        android:id="@+id/menu_faq"
+        android:icon="@drawable/menu_ic_faq"
+        android:title="FAQs" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/menu_ic_share"
+        android:title="Refer a friend" />
+    <item
+        android:id="@+id/menu_terms"
+        android:icon="@drawable/menu_ic__terms"
+        android:title="Term and Privacy"
+
+        />
+    <item
+        android:id="@+id/menu_disclaim"
+        android:icon="@drawable/menu_ic_disclaimer"
+        android:title="Disclaimer" />
+    <item
+        android:title="Content"
+        app:showAsAction="never"
+
+        >
+<menu>
+
+    <item
+        android:icon="@drawable/ic_menu_contacts"
+        android:title="Contact Us" />
+    <item
+        android:icon="@drawable/ic_menu_shutdown"
+        android:title="Logout" />
+
+</menu>
+    </item>
+
+</menu>

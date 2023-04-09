@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="klim8.activities.authentication.WalkinActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/img_klim8"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/klim8_walkin" />
+
+    <ImageView
+        android:id="@+id/img_welcoming"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/img_klim8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/welcoming_illustration" />
+
+            <TextView
+                android:id="@+id/tv_carbon_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/img_welcoming"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_black_bold"
+                android:text="Carbon Calculator"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_cal_your"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_carbon_cal"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Calculate your carbon\nfootprint with the world’s\nsimplest carbon\ncalculator."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:id="@+id/ll_register_now"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_cal_your"
+               android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/rec_backround"
+                android:textColor="@color/white" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Start"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
