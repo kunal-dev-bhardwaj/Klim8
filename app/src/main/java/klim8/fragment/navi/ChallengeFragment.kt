@@ -8,8 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.inmortal.klim8.R
 import com.inmortal.klim8.databinding.FragmentChallengeBinding
+import klim8.fragment.challenge.ActiveFragment
 
 import klim8.fragment.challenge.AllFragment
+import klim8.fragment.challenge.EndedFragment
 
 
 class ChallengeFragment : Fragment() {
@@ -29,10 +31,40 @@ class ChallengeFragment : Fragment() {
         return binding.root
     }
     private fun onCLick(){
-        binding.cvAllGreen.setOnClickListener{
+
+        binding.cvAllWhite.setOnClickListener{
             fragReplace(AllFragment())
+            binding.cvAllGreen.visibility=View.VISIBLE
+            binding.cvAllWhite.visibility=View.INVISIBLE
+            binding.cvActiveWhite.visibility=View.VISIBLE
+            binding.cvEndedWhite.visibility=View.VISIBLE
+            binding.cvEndedGreen.visibility=View.INVISIBLE
 
         }
+
+
+        binding.cvActiveWhite.setOnClickListener{
+            fragReplace(ActiveFragment())
+            binding.cvAllWhite.visibility=View.VISIBLE
+            binding.cvAllGreen.visibility= View.INVISIBLE
+            binding.cvActiveWhite.visibility=View.INVISIBLE
+            binding.cvActiveGreen.visibility=View.VISIBLE
+            binding.cvEndedWhite.visibility=View.VISIBLE
+            binding.cvEndedGreen.visibility=View.INVISIBLE
+
+
+        }
+
+        binding.cvEndedWhite.setOnClickListener{
+            fragReplace(EndedFragment())
+            binding.cvEndedGreen.visibility=View.VISIBLE
+            binding.cvEndedWhite.visibility=View.INVISIBLE
+            binding.cvAllGreen.visibility=View.INVISIBLE
+            binding.cvAllWhite.visibility=View.VISIBLE
+            binding.cvActiveWhite.visibility=View.VISIBLE
+            binding.cvActiveGreen.visibility=View.INVISIBLE
+        }
+
     }
 
     private fun fragReplace( fragment: Fragment){

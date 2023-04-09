@@ -44,29 +44,6 @@
             android:layout_gravity="center"
             android:layout_margin="10dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:layout_margin="2dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="2dp"
-                android:elevation="4dp"
-                android:visibility="gone"
-                app:cardCornerRadius="6dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/raleway_semi_bold"
-
-                    android:text="All"
-                    android:textColor="@color/black"
-
-                    />
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_all_green"
@@ -92,6 +69,30 @@
 
                     />
             </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_all_white"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="invisible"
+                android:backgroundTint="@color/white"
+                android:elevation="4dp"
+                app:cardCornerRadius="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:fontFamily="@font/raleway_semi_bold"
+                    android:text="All"
+                    android:textColor="@color/black"
+
+                    />
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_active_green"
@@ -104,7 +105,7 @@
                 android:layout_toRightOf="@+id/cv_all_green"
                 android:background="@color/klim_theme_green"
                 android:backgroundTint="@color/klim_theme_green_light"
-                android:visibility="gone"
+                android:visibility="invisible"
                 app:cardCornerRadius="6dp"
                 android:elevation="4dp">
 
@@ -127,10 +128,12 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                app:cardCornerRadius="6dp"
-                android:elevation="4dp"
                 android:layout_toRightOf="@+id/cv_all_green"
-                android:backgroundTint="@color/white">
+
+                android:backgroundTint="@color/white"
+
+                app:cardCornerRadius="6dp"
+                android:elevation="4dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -142,6 +145,8 @@
 
                     />
             </androidx.cardview.widget.CardView>
+
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_ended_white"
@@ -178,7 +183,7 @@
                 android:layout_toRightOf="@+id/cv_active_white"
                 android:backgroundTint="@color/klim_theme_green_light"
                 android:elevation="4dp"
-                android:visibility="gone"
+                android:visibility="invisible"
                 app:cardCornerRadius="6dp">
 
                 <TextView
