@@ -27,7 +27,7 @@ class ActiveFragment : Fragment() {
     }
     private fun setUpAdapter() {
 
-        binding.rvCtiveFrag.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, true)
+        binding.rvCtiveFrag.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         binding.rvCtiveFrag.adapter=ChallengesActiveAdapter(requireContext())
 
 

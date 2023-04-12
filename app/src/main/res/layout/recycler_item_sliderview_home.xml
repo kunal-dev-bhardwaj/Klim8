@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:src="@drawable/bg_home_slideview"
+    android:layout_height="200dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/klim_theme_green_light"
+    />
+    <!--Image we will display is our slider view-->
+    <ImageView
+        android:id="@+id/myimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+android:background="@drawable/bg_home_slideview"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

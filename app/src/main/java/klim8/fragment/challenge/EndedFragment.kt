@@ -27,7 +27,7 @@ class EndedFragment : Fragment() {
     }
     private fun setUpAdapter() {
 
-        binding.rvEndedFrag.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, true)
+        binding.rvEndedFrag.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         binding.rvEndedFrag.adapter=ChallengesEndedAdapter(requireContext())
 
 

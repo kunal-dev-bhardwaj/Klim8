@@ -31,7 +31,7 @@ class ChallengesActiveAdapter(context: Context) :
     }
 
     override fun getItemCount(): Int {
-        return 5
+        return 2
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

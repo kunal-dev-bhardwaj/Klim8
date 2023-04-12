@@ -10,9 +10,10 @@ import com.inmortal.klim8.R
 class ChallengesEndedAdapter(context: Context) :
     RecyclerView.Adapter<ChallengesEndedAdapter.ViewHolder>() {
     var context:Context
-    init {
-        this.context=context
-    }
+   init {
+       this.context=context
+   }
+
 
 
 
@@ -31,7 +32,7 @@ class ChallengesEndedAdapter(context: Context) :
     }
 
     override fun getItemCount(): Int {
-        return 5
+        return 1
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

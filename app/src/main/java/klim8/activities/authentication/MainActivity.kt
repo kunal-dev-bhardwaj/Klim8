@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.inmortal.klim8.R
 import com.inmortal.klim8.databinding.ActivityMainBinding
+
 import klim8.fragment.navi.ChallengeFragment
 import klim8.fragment.navi.HomeFragment
 import klim8.fragment.navi.RewardFragment
@@ -61,6 +62,7 @@ class MainActivity : AppCompatActivity() {
             fragmentReplacement(HomeFragment())
             binding.llOpenDrawer.visibility=View.VISIBLE
 
+
         }
         binding.icChallenges.setOnClickListener {
             binding.icChallengesGreen.visibility = View.VISIBLE
@@ -79,6 +81,7 @@ class MainActivity : AppCompatActivity() {
             binding.tvReward.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
             fragmentReplacement(ChallengeFragment())
             binding.llOpenDrawer.visibility=View.GONE
+
         }
         binding.llScorecard.setOnClickListener {
             binding.icScorecardGreen.visibility = View.VISIBLE
@@ -95,6 +98,8 @@ class MainActivity : AppCompatActivity() {
             binding.tvReward.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
             fragmentReplacement(ScoreCardFragment())
             binding.llOpenDrawer.visibility=View.GONE
+
+
         }
         binding.llReward.setOnClickListener {
             binding.icRewardGreen.visibility = View.VISIBLE
@@ -113,6 +118,7 @@ class MainActivity : AppCompatActivity() {
             binding.tvChallenges.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
             fragmentReplacement(RewardFragment())
             binding.llOpenDrawer.visibility=View.GONE
+
 
         }
 
