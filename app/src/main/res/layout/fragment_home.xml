@@ -125,6 +125,7 @@
                     android:textSize="16dp" />
 
                 <TextView
+                    android:id="@+id/tv_readmore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -159,6 +160,7 @@
                     android:textSize="16dp" />
 
                 <TextView
+                    android:id="@+id/tv_viewmore_blog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -168,6 +170,7 @@
                     android:textColor="@color/klim_theme_green_light"
                     android:textSize="16dp" />
             </RelativeLayout>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_latest_blogs"
                 android:layout_width="match_parent"
@@ -189,6 +192,7 @@
                     android:textSize="16dp" />
 
                 <TextView
+                    android:id="@+id/tv_ytvideo_more"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -204,8 +208,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp" />
-
-
 
 
         </LinearLayout>

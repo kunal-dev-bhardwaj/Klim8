@@ -7,103 +7,86 @@
     android:orientation="vertical"
     tools:context="klim8.activities.authentication.FootPrintActivity">
 
-
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
-        <LinearLayout
+        <androidx.appcompat.widget.Toolbar
+
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            android:layout_height="45dp"
+            android:background="@drawable/bg_toolbar2">
 
+            <ImageView
+                android:id="@+id/ic_arrw_back_stp1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_back_arrow" />
 
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:background="@drawable/bg_toolbar2">
-
-                <ImageView
-                    android:id="@+id/ic_arrw_back_stp1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="left"
-                    android:src="@drawable/ic_back_arrow" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/monda_bold"
-                    android:text="My Carbon Footprint"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-            </androidx.appcompat.widget.Toolbar>
-            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="YOUR RESULT"
-                android:textColor="@color/black"
-                android:fontFamily="@font/monda_bold"
-                android:textSize="25sp"
-                android:layout_margin="15dp"
                 android:layout_gravity="center"
-                />
+                android:fontFamily="@font/monda_bold"
+                android:text="My Carbon Footprint"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-                        <LinearLayout
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
 
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="20dp"
-                            android:layout_marginTop="600dp"
-                            android:layout_marginBottom="20dp"
-                            android:orientation="horizontal"
-                            android:weightSum="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/monda_bold"
+        android:text="YOUR RESULT"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
 
-                            <RelativeLayout
-                                android:id="@+id/btn_save"
-                                android:layout_width="250dp"
-                                android:layout_height="50dp"
-                                android:layout_weight="1"
-                                android:background="@drawable/rec_backround"
-                                android:textColor="@color/white">
+    <LinearLayout
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_centerInParent="true"
-                                    android:fontFamily="@font/poppins_medium"
-                                    android:text="Save"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-                            </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btn_save"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rec_backround"
+            android:textColor="@color/white">
 
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp"
-                                android:layout_weight="1"
-                                android:src="@drawable/img_below_arrow" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
 
-                        </LinearLayout>
+        </RelativeLayout>
 
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/img_below_arrow" />
 
-        </LinearLayout>
+    </LinearLayout>
 
-
-
-
-
-
-    </ScrollView>
 
 </RelativeLayout>
