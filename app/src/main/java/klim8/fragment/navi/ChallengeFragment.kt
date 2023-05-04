@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.inmortal.klim8.R
 import com.inmortal.klim8.databinding.FragmentChallengeBinding
-import klim8.fragment.challenge.ActiveFragment
+import klim8.fragment.challenge.main.ActiveFragment
 
-import klim8.fragment.challenge.AllFragment
-import klim8.fragment.challenge.EndedFragment
+import klim8.fragment.challenge.main.AllFragment
+import klim8.fragment.challenge.main.EndedFragment
 
 
 class ChallengeFragment : Fragment() {

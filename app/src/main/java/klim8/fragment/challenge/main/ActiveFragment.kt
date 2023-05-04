@@ -1,4 +1,4 @@
-package klim8.fragment.challenge
+package klim8.fragment.challenge.main
 
 import ChallengesActiveAdapter
 import ChallengesAllAdapter
@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.inmortal.klim8.databinding.FragmentActive2Binding
-import com.inmortal.klim8.databinding.FragmentAllFargmentBinding
 
 
 class ActiveFragment : Fragment() {

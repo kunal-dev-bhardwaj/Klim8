@@ -40,6 +40,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <ImageView
+                android:id="@+id/img_ic_join"
                 android:layout_width="80dp"
                 android:layout_height="30dp"
                 android:layout_margin="20dp"

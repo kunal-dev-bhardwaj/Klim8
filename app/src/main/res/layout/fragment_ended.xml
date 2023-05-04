@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="klim8.fragment.challenge.EndedFragment">
+    tools:context="klim8.fragment.challenge.main.EndedFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

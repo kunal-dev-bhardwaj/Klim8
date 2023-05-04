@@ -20,7 +20,7 @@ class ChallengesEndedAdapter(context: Context) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View =
-            LayoutInflater.from(context).inflate(R.layout.recyler_item_challenges, parent, false)
+            LayoutInflater.from(context).inflate(R.layout.recycler_item_ended, parent, false)
         return ViewHolder(view)
     }
 

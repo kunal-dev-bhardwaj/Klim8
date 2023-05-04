@@ -17,7 +17,6 @@ import com.inmortal.klim8.databinding.ActivityMainBinding
 import klim8.fragment.navi.ChallengeFragment
 import klim8.fragment.navi.HomeFragment
 import klim8.fragment.navi.RewardFragment
-import klim8.fragment.navi.ScoreCardFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -83,24 +82,24 @@ class MainActivity : AppCompatActivity() {
             binding.llOpenDrawer.visibility=View.GONE
 
         }
-        binding.llScorecard.setOnClickListener {
-            binding.icScorecardGreen.visibility = View.VISIBLE
-            binding.tvScorecard.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_green_light));
-
-            //home
-            binding.icHomeGreen.visibility = View.INVISIBLE
-            binding.tvHome.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
-            //challenge
-            binding.icChallengesGreen.visibility = View.INVISIBLE
-            binding.tvChallenges.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
-            //reward
-            binding.icRewardGreen.visibility = View.INVISIBLE
-            binding.tvReward.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
-            fragmentReplacement(ScoreCardFragment())
-            binding.llOpenDrawer.visibility=View.GONE
-
-
-        }
+//        binding.llScorecard.setOnClickListener {
+//            binding.icScorecardGreen.visibility = View.VISIBLE
+//            binding.tvScorecard.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_green_light));
+//
+//            //home
+//            binding.icHomeGreen.visibility = View.INVISIBLE
+//            binding.tvHome.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
+//            //challenge
+//            binding.icChallengesGreen.visibility = View.INVISIBLE
+//            binding.tvChallenges.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
+//            //reward
+//            binding.icRewardGreen.visibility = View.INVISIBLE
+//            binding.tvReward.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_grey));
+//            fragmentReplacement(ScoreCardFragment())
+//            binding.llOpenDrawer.visibility=View.GONE
+//
+//
+//        }
         binding.llReward.setOnClickListener {
             binding.icRewardGreen.visibility = View.VISIBLE
             binding.tvReward.setTextColor(resources.getColor(com.inmortal.klim8.R.color.klim_theme_green_light));

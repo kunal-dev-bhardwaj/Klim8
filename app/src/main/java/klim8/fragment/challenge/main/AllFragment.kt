@@ -1,4 +1,4 @@
-package klim8.fragment.challenge
+package klim8.fragment.challenge.main
 
 import ChallengesAllAdapter
 import android.os.Bundle
@@ -25,7 +25,7 @@ class AllFragment : Fragment() {
     }
     private fun setUpAdapter() {
 
-        binding.rvAllFrag.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, true)
+        binding.rvAllFrag.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false )
         binding.rvAllFrag.adapter=ChallengesAllAdapter(requireContext())
 
 

@@ -14,6 +14,34 @@
         android:theme="@style/Theme.Klim8"
         tools:targetApi="31">
         <activity
+            android:name="klim8.activities.challenges.CommutingChallenge"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="klim8.activities.challenges.ShoppingChallenge"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="klim8.activities.QuesAnsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="klim8.activities.challenges.LiteBiteChallenge"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="klim8.activities.viewmore.ViewMoreBlogActivity"
             android:exported="false">
             <meta-data

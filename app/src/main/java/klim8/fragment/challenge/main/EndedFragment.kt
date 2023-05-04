@@ -1,4 +1,4 @@
-package klim8.fragment.challenge
+package klim8.fragment.challenge.main
 
 import ChallengesAllAdapter
 import ChallengesEndedAdapter
