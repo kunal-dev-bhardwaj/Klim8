@@ -21,6 +21,7 @@ class LiteBiteFragmentQuestion4 : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentLiteBiteQuestion4Binding.inflate(inflater, container, false)
         onclick()
+        manageVisiblity()
         return binding.root
     }
 
@@ -32,6 +33,29 @@ class LiteBiteFragmentQuestion4 : Fragment() {
 
 
         }
+
+    }
+    private fun manageVisiblity(){
+        binding.foodQ4Option1.setOnClickListener {
+            binding.imgFoodQ4SelectedOption1.visibility=View.VISIBLE
+            binding.imgFoodQ4SelectedOption2.visibility=View.INVISIBLE
+            binding.imgFoodQ4SelectedOption3.visibility=View.INVISIBLE
+
+        }
+        binding.foodQ4Option2.setOnClickListener {
+            binding.imgFoodQ4SelectedOption2.visibility=View.VISIBLE
+            binding.imgFoodQ4SelectedOption1.visibility=View.INVISIBLE
+            binding.imgFoodQ4SelectedOption3.visibility=View.INVISIBLE
+
+        }
+        binding.foodQ4Option3.setOnClickListener {
+            binding.imgFoodQ4SelectedOption3.visibility=View.VISIBLE
+            binding.imgFoodQ4SelectedOption2.visibility=View.INVISIBLE
+            binding.imgFoodQ4SelectedOption1.visibility=View.INVISIBLE
+
+        }
+
+
 
     }
 }

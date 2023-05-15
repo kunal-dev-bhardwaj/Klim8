@@ -21,6 +21,7 @@ class ShoppingFragmentQuestion2 : Fragment() {
 
         binding= FragmentShoppingQuestion2Binding.inflate(layoutInflater,container,false)
         onClick()
+        manageVisiblity()
         return binding.root
     }
     private fun onClick() {
@@ -30,6 +31,29 @@ class ShoppingFragmentQuestion2 : Fragment() {
             fragReplace.commit()
 
         }
+    }
+    private fun manageVisiblity(){
+        binding.shoppingQ2Option1.setOnClickListener {
+            binding.imgShoppingQ2SelectedOption1.visibility=View.VISIBLE
+            binding.imgShoppingQ2SelectedOption2.visibility=View.INVISIBLE
+            binding.imgShoppingQ2SelectedOption3.visibility=View.INVISIBLE
+
+        }
+        binding.shoppingQ2Option2.setOnClickListener {
+            binding.imgShoppingQ2SelectedOption2.visibility=View.VISIBLE
+            binding.imgShoppingQ2SelectedOption1.visibility=View.INVISIBLE
+            binding.imgShoppingQ2SelectedOption3.visibility=View.INVISIBLE
+
+        }
+        binding.shoppingQ2Option3.setOnClickListener {
+            binding.imgShoppingQ2SelectedOption3.visibility=View.VISIBLE
+            binding.imgShoppingQ2SelectedOption2.visibility=View.INVISIBLE
+            binding.imgShoppingQ2SelectedOption1.visibility=View.INVISIBLE
+
+        }
+
+
+
     }
 
 }

@@ -8,12 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.inmortal.klim8.R
 
 
-class CompleteDeedsAdapter(context: Context) :
+class CompleteDeedsAdapter(var context: Context) :
     RecyclerView.Adapter<CompleteDeedsAdapter.ViewHolder>() {
-    var context: Context
-    init {
-        this.context=context
-    }
+
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

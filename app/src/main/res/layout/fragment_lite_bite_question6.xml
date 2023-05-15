@@ -102,6 +102,7 @@ terms \n of carbon emissions?"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                       android:id="@+id/food_q6_option1"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginHorizontal="50dp"
@@ -121,6 +122,7 @@ terms \n of carbon emissions?"
 
 
                                 <ImageView
+                                    android:id="@+id/img_food_q6_non_selected_option1"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_margin="5dp"
@@ -128,6 +130,7 @@ terms \n of carbon emissions?"
                                     android:src="@drawable/img_challenges_unselectd" />
 
                                 <ImageView
+                                    android:id="@+id/img_food_q6_selected_option1"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_gravity="center"
@@ -151,6 +154,7 @@ terms \n of carbon emissions?"
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/food_q6_option2"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginHorizontal="50dp"
@@ -170,6 +174,7 @@ terms \n of carbon emissions?"
 
 
                                 <ImageView
+                                    android:id="@+id/img_food_q6_non_selected_option2"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_margin="5dp"
@@ -177,10 +182,14 @@ terms \n of carbon emissions?"
                                     android:src="@drawable/img_challenges_unselectd" />
 
                                 <ImageView
+                                    android:id="@+id/img_food_q6_selected_option2"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_gravity="center"
-                                    android:layout_margin="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
                                     android:src="@drawable/img_challenges_selected"
                                     android:visibility="invisible" />
                             </RelativeLayout>
@@ -200,6 +209,7 @@ terms \n of carbon emissions?"
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/food_q6_option3"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginHorizontal="50dp"
@@ -220,13 +230,17 @@ terms \n of carbon emissions?"
 
 
                                 <ImageView
+                                    android:id="@+id/img_food_q6_non_selected_option3"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
-                                    android:layout_margin="5dp"
 
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
                                     android:src="@drawable/img_challenges_unselectd" />
 
                                 <ImageView
+                                    android:id="@+id/img_food_q6_selected_option3"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_gravity="center"

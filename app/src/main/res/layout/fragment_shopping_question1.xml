@@ -102,6 +102,7 @@ annually :"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/shopping_q1_option1"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginHorizontal="50dp"
@@ -121,6 +122,7 @@ annually :"
 
 
                                 <ImageView
+                                    android:id="@+id/img_shopping_q1_non_selected_option1"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_margin="5dp"
@@ -128,10 +130,14 @@ annually :"
                                     android:src="@drawable/img_challenges_unselectd" />
 
                                 <ImageView
+                                    android:id="@+id/img_shopping_q1_selected_option1"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_gravity="center"
-                                    android:layout_margin="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
                                     android:src="@drawable/img_challenges_selected"
                                     android:visibility="invisible" />
                             </RelativeLayout>
@@ -151,6 +157,7 @@ annually :"
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/shopping_q1_option2"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginHorizontal="50dp"
@@ -170,6 +177,7 @@ annually :"
 
 
                                 <ImageView
+                                    android:id="@+id/img_shopping_q1_non_selected_option2"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_margin="5dp"
@@ -177,10 +185,14 @@ annually :"
                                     android:src="@drawable/img_challenges_unselectd" />
 
                                 <ImageView
+                                    android:id="@+id/img_shopping_q1_selected_option2"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_gravity="center"
-                                    android:layout_margin="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
                                     android:src="@drawable/img_challenges_selected"
                                     android:visibility="invisible" />
                             </RelativeLayout>
@@ -200,6 +212,7 @@ annually :"
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/shopping_q1_option3"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginHorizontal="50dp"
@@ -220,6 +233,7 @@ annually :"
 
 
                                 <ImageView
+                                    android:id="@+id/img_shopping_q1_non_selected_option3"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_margin="5dp"
@@ -227,10 +241,14 @@ annually :"
                                     android:src="@drawable/img_challenges_unselectd" />
 
                                 <ImageView
+                                    android:id="@+id/img_shopping_q1_selected_option3"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_gravity="center"
-                                    android:layout_margin="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
                                     android:src="@drawable/img_challenges_selected"
                                     android:visibility="invisible" />
                             </RelativeLayout>

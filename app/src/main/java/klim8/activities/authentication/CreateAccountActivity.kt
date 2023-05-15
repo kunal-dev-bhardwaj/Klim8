@@ -13,8 +13,8 @@ class CreateAccountActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreateAccountBinding.inflate(layoutInflater)
-        val view: View = binding.root
-        setContentView(view)
+
+        setContentView(binding.root)
 
         binding.arrowBackCreate.setOnClickListener {
             onBackPressed()

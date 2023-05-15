@@ -19,6 +19,7 @@ class LiteBiteFragmentQuestion2 : Fragment() {
     ): View? {
         binding = FragmentLiteBiteQuestion2Binding.inflate(inflater,container,false)
         onclick()
+        manageVisiblity()
         return binding.root
     }
     private fun onclick() {
@@ -29,6 +30,29 @@ class LiteBiteFragmentQuestion2 : Fragment() {
 
 
         }
+    }
+    private fun manageVisiblity(){
+        binding.foodQ2Option1.setOnClickListener {
+            binding.imgFoodQ2SelectedOption1.visibility=View.VISIBLE
+            binding.imgFoodQ2SelectedOption2.visibility=View.INVISIBLE
+            binding.imgFoodQ2SelectedOption3.visibility=View.INVISIBLE
+
+        }
+        binding.foodQ2Option2.setOnClickListener {
+            binding.imgFoodQ2SelectedOption2.visibility=View.VISIBLE
+            binding.imgFoodQ2SelectedOption1.visibility=View.INVISIBLE
+            binding.imgFoodQ2SelectedOption3.visibility=View.INVISIBLE
+
+        }
+        binding.foodQ2Option3.setOnClickListener {
+            binding.imgFoodQ2SelectedOption3.visibility=View.VISIBLE
+            binding.imgFoodQ2SelectedOption2.visibility=View.INVISIBLE
+            binding.imgFoodQ2SelectedOption1.visibility=View.INVISIBLE
+
+        }
+
+
+
     }
 
 }
